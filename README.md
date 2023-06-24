@@ -35,6 +35,10 @@ This is a collection of pre-built components that can be used to create impressi
 This repository contains a client application that serves as a local testing environment. Using this client, you can create email templates by selecting from pre-built components, apply styles to these components, preview the final render, and obtain the corresponding  HTML code.
 This repository contains a client application that serves as a local testing environment. Using this platform, you can create email templates by selecting from pre-built components, apply styles to these components, preview the final render, and obtain the corresponding  HTML code.
 
+## TODO
+
+- [ ] - Client
+
 ## Other
 
 Inspired by [react-email](https://github.com/resendlabs/react-email)
