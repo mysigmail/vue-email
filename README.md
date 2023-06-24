@@ -16,19 +16,19 @@ We aim to simplify the process of creating emails and make it more accessible fo
 
 This is a collection of pre-built components that can be used to create impressive emails without the hassle of manually creating tables and managing outdated code.
 
-- Body
-- Button
-- Column
-- Container
-- Divider
-- Head
-- Heading
-- Html
-- Image
-- Link
-- Paragraph
-- Preview
-- Section
+- [Body](https://github.com/mysigmail/vue-email/tree/main/packages/components/body)
+- [Button](https://github.com/mysigmail/vue-email/tree/main/packages/components/button)
+- [Column](https://github.com/mysigmail/vue-email/tree/main/packages/components/column)
+- [Container](https://github.com/mysigmail/vue-email/tree/main/packages/components/container)
+- [Divider](https://github.com/mysigmail/vue-email/tree/main/packages/components/hr)
+- [Head](https://github.com/mysigmail/vue-email/tree/main/packages/components/head)
+- [Heading](https://github.com/mysigmail/vue-email/tree/main/packages/components/heading)
+- [Html](https://github.com/mysigmail/vue-email/tree/main/packages/components/html)
+- [Image](https://github.com/mysigmail/vue-email/tree/main/packages/components/img)
+- [Link](https://github.com/mysigmail/vue-email/tree/main/packages/components/link)
+- [Paragraph](https://github.com/mysigmail/vue-email/tree/main/packages/components/text)
+- [Preview](https://github.com/mysigmail/vue-email/tree/main/packages/components/preview)
+- [Section](https://github.com/mysigmail/vue-email/tree/main/packages/components/section)
 
 ## Client
 
