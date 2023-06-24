@@ -1,16 +1,7 @@
 {
   "name": "@mysigmail/vue-email-components",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "All vue email components",
-  "author": {
-    "name": "Anton Reshetov",
-    "url": "https://github.com/antonreshetov"
-  },
-  "license": "MIT",
-  "keywords": [
-    "vue",
-    "email"
-  ],
   "main": "dist/index.es.js",
   "module": "dist/index.es.js",
   "types": "dist/index.es.d.ts",
@@ -20,8 +11,19 @@
   "scripts": {
     "build": "vite build",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "release": "bumpp -c 'build: release v' -t",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
+  "author": {
+    "name": "Anton Reshetov",
+    "url": "https://github.com/antonreshetov"
+  },
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "email"
+  ],
   "dependencies": {
     "html-to-text": "^9.0.5",
     "pretty": "^2.0.0",
@@ -34,6 +36,7 @@
     "@types/html-to-text": "^9.0.1",
     "@types/pretty": "^2.0.1",
     "@vitejs/plugin-vue": "^4.1.0",
+    "bumpp": "^9.1.1",
     "eslint": "^8.43.0",
     "lint-staged": "^13.2.2",
     "simple-git-hooks": "^2.8.1",
