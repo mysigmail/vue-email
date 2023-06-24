@@ -25,4 +25,7 @@ export default defineConfig({
       copyDtsFiles: true,
     }),
   ],
+  resolve: {
+    dedupe: ['vue'],
+  },
 })
