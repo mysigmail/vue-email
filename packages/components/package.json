@@ -1,0 +1,55 @@
+{
+  "name": "@mysigmail/vue-email-components",
+  "version": "0.0.0",
+  "description": "All vue email components",
+  "author": {
+    "name": "Anton Reshetov",
+    "url": "https://github.com/antonreshetov"
+  },
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "email"
+  ],
+  "main": "dist/index.es.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.es.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "html-to-text": "^9.0.5",
+    "pretty": "^2.0.0",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.5",
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
+    "@types/html-to-text": "^9.0.1",
+    "@types/pretty": "^2.0.1",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "eslint": "^8.43.0",
+    "lint-staged": "^13.2.2",
+    "simple-git-hooks": "^2.8.1",
+    "vite": "^4.3.9",
+    "vite-plugin-dts": "^2.3.0"
+  },
+  "lint-staged": {
+    "*.{ts,vue}": [
+      "eslint --fix"
+    ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "pnpm commitlint --edit $1"
+  },
+  "engines": {
+    "pnpm": ">=8.0.0"
+  }
+}

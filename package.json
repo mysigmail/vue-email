@@ -1,0 +1,26 @@
+{
+  "name": "@mysigmail/vue-email-monorepo",
+  "version": "0.0.0",
+  "private": "true",
+  "author": {
+    "name": "Anton Reshetov",
+    "url": "https://github.com/antonreshetov"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "pnpm -r --filter='./packages/client' run dev",
+    "build": "pnpm -r --filter='./packages/components' run build"
+  },
+  "lint-staged": {
+    "*.{ts,vue}": [
+      "eslint --fix"
+    ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "pnpm commitlint --edit $1"
+  },
+  "engines": {
+    "pnpm": ">=8.0.0"
+  }
+}
