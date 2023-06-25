@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@element-plus/nuxt": "^1.0.5",
-    "@mysigmail/vue-email-components": "workspace:^",
+    "@mysigmail/vue-email-components": "file:../components",
     "element-plus": "^2.3.7",
     "html-to-text": "^9.0.5",
     "pretty": "^2.0.0",

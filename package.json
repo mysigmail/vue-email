@@ -23,5 +23,11 @@
   },
   "engines": {
     "pnpm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
+    "lint-staged": "^13.2.2",
+    "simple-git-hooks": "^2.8.1"
   }
 }
