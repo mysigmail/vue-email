@@ -22,7 +22,7 @@ pnpm add @mysigmail/vue-email-components
 
 ### Global
 
-```html
+```js
 import { createApp } from 'vue'
 import App from './App.vue'
 import VueEmail from '@mysigmail/vue-email-components'
@@ -63,15 +63,15 @@ This is a collection of pre-built components that can be used to create impressi
 - [MButton](https://github.com/mysigmail/vue-email/tree/main/packages/components/button)
 - [MColumn](https://github.com/mysigmail/vue-email/tree/main/packages/components/column)
 - [MContainer](https://github.com/mysigmail/vue-email/tree/main/packages/components/container)
-- [MDivider](https://github.com/mysigmail/vue-email/tree/main/packages/components/hr)
 - [MHead](https://github.com/mysigmail/vue-email/tree/main/packages/components/head)
 - [MHeading](https://github.com/mysigmail/vue-email/tree/main/packages/components/heading)
+- [MHr](https://github.com/mysigmail/vue-email/tree/main/packages/components/hr)
 - [MHtml](https://github.com/mysigmail/vue-email/tree/main/packages/components/html)
 - [MImage](https://github.com/mysigmail/vue-email/tree/main/packages/components/img)
 - [MLink](https://github.com/mysigmail/vue-email/tree/main/packages/components/link)
-- [MParagraph](https://github.com/mysigmail/vue-email/tree/main/packages/components/text)
 - [MPreview](https://github.com/mysigmail/vue-email/tree/main/packages/components/preview)
 - [MSection](https://github.com/mysigmail/vue-email/tree/main/packages/components/section)
+- [MText](https://github.com/mysigmail/vue-email/tree/main/packages/components/text)
 
 ## Client
 

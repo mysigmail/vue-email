@@ -1,3 +1,3 @@
 # Image
 
-Description
+Display an image in your email.

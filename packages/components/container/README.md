@@ -1,3 +1,3 @@
 # Container
 
-Description
+A layout component that centers all the email content.

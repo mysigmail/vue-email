@@ -1,3 +1,3 @@
 # Row
 
-Description
+A row component.

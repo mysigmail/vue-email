@@ -3,6 +3,13 @@ import { createApp } from 'vue'
 import pretty from 'pretty'
 import { convert } from 'html-to-text'
 
+/**
+ * Renders a Vue component to an HTML string.
+ * @param {new(): T} Component - The Vue component to render.
+ * @param {Plugin} [use] - The Vue plugin to use.
+ * @param {boolean} [plain] - Whether to return plain text or pretty HTML.
+ * @returns {string} The rendered HTML string.
+ */
 export function render<T extends Component>(
   Component: { new (): T },
   use?: Plugin,

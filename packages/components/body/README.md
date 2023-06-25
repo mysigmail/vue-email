@@ -1,3 +1,3 @@
 # Body
 
-Description
+A body component to wrap emails.

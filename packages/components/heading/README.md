@@ -1,3 +1,3 @@
 # Heading
 
-Description
+A block of heading text.

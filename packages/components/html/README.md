@@ -1,3 +1,3 @@
 # HTML
 
-Description
+A html component to wrap emails.
