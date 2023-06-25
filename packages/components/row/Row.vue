@@ -1,6 +1,7 @@
 <template>
   <table
     align="center"
+    width="100%"
     role="presentation"
     cellSpacing="0"
     cellPadding="0"
