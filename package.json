@@ -9,7 +9,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "pnpm -r --filter='./packages/client' run dev",
-    "build": "pnpm -r --filter='./packages/components' run build"
+    "build": "pnpm -r --filter='./packages/components' run build",
+    "release": "pnpm -r --filter='./packages/components' run release"
   },
   "lint-staged": {
     "*.{ts,vue}": [

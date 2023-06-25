@@ -6,12 +6,13 @@ export default defineConfig({
   build: {
     lib: {
       entry: './index.ts',
-      formats: ['es'],
-      fileName: f => `index.${f}.js`,
+      name: 'index',
+      fileName: 'index',
     },
     rollupOptions: {
       external: ['vue', 'html-to-text', 'pretty'],
       output: {
+        dir: './dist',
         globals: {
           vue: 'Vue',
         },

@@ -2,16 +2,17 @@
   "name": "@mysigmail/vue-email-components",
   "version": "0.1.2",
   "description": "All vue email components",
-  "main": "dist/index.es.js",
-  "module": "dist/index.es.js",
-  "types": "dist/index.es.d.ts",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist/**"
   ],
   "scripts": {
-    "build": "vite build",
+    "build": "npm run clear && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "clear": "rimraf ./dist",
     "release": "bumpp -c 'build: release v' -t --no-push",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
@@ -40,6 +41,7 @@
     "bumpp": "^9.1.1",
     "eslint": "^8.43.0",
     "lint-staged": "^13.2.2",
+    "rimraf": "^5.0.1",
     "simple-git-hooks": "^2.8.1",
     "vite": "^4.3.9",
     "vite-plugin-dts": "^2.3.0"
