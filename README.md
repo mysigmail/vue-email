@@ -22,7 +22,7 @@ pnpm add @mysigmail/vue-email-components
 
 ### Global
 
-```bash
+```html
 import { createApp } from 'vue'
 import App from './App.vue'
 import VueEmail from '@mysigmail/vue-email-components'
@@ -78,10 +78,24 @@ This is a collection of pre-built components that can be used to create impressi
 This repository contains a client application that serves as a local testing environment. Using this client, you can create email templates by selecting from pre-built components, apply styles to these components, preview the final render, and obtain the corresponding  HTML code.
 This repository contains a client application that serves as a local testing environment. Using this platform, you can create email templates by selecting from pre-built components, apply styles to these components, preview the final render, and obtain the corresponding  HTML code.
 
+### Install
+
+```bash
+git clone https://github.com/mysigmail/vue-email.git
+
+pnpm install
+```
+
+### Run
+
+```bash
+pnpm run dev
+```
+
 ## TODO
 
-- [ ] Client
 - [ ] Test sending an email using Nodemailer.
+- [ ] Add the script to the automatic setup for the client.
 ## Other
 
 Inspired by [react-email](https://github.com/resendlabs/react-email)

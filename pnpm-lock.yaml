@@ -19,6 +19,9 @@ importers:
       element-plus:
         specifier: ^2.3.7
         version: 2.3.7(vue@3.3.4)
+      html-to-text:
+        specifier: ^9.0.5
+        version: 9.0.5
       pretty:
         specifier: ^2.0.0
         version: 2.0.0
