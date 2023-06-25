@@ -12,23 +12,66 @@ Email still remains one of the most widely used and popular communication channe
 
 We aim to simplify the process of creating emails and make it more accessible for everyone.
 
+## Install
+
+```bash
+pnpm add @mysigmail/vue-email-components
+```
+
+## Use
+
+### Global
+
+```bash
+import { createApp } from 'vue'
+import App from './App.vue'
+import VueEmail from '@mysigmail/vue-email-components'
+
+createApp(App).use(VueEmail).mount('#app')
+```
+
+### Local
+
+```html
+<script setup>
+import { MButton } from '@mysigmail/vue-email-components'
+</script>
+
+<template>
+  <div>
+    <MButton>Click me</MButton>
+  </div>
+</template>
+```
+
+### Render to HTML
+
+```html
+<script setup>
+import { render } from '@mysigmail/vue-email-components'
+import YourEmail from './YourEmail.vue'
+
+const html = render(YourEmail)
+</script>
+```
+
 ## Components
 
 This is a collection of pre-built components that can be used to create impressive emails without the hassle of manually creating tables and managing outdated code.
 
-- [Body](https://github.com/mysigmail/vue-email/tree/main/packages/components/body)
-- [Button](https://github.com/mysigmail/vue-email/tree/main/packages/components/button)
-- [Column](https://github.com/mysigmail/vue-email/tree/main/packages/components/column)
-- [Container](https://github.com/mysigmail/vue-email/tree/main/packages/components/container)
-- [Divider](https://github.com/mysigmail/vue-email/tree/main/packages/components/hr)
-- [Head](https://github.com/mysigmail/vue-email/tree/main/packages/components/head)
-- [Heading](https://github.com/mysigmail/vue-email/tree/main/packages/components/heading)
-- [Html](https://github.com/mysigmail/vue-email/tree/main/packages/components/html)
-- [Image](https://github.com/mysigmail/vue-email/tree/main/packages/components/img)
-- [Link](https://github.com/mysigmail/vue-email/tree/main/packages/components/link)
-- [Paragraph](https://github.com/mysigmail/vue-email/tree/main/packages/components/text)
-- [Preview](https://github.com/mysigmail/vue-email/tree/main/packages/components/preview)
-- [Section](https://github.com/mysigmail/vue-email/tree/main/packages/components/section)
+- [MBody](https://github.com/mysigmail/vue-email/tree/main/packages/components/body)
+- [MButton](https://github.com/mysigmail/vue-email/tree/main/packages/components/button)
+- [MColumn](https://github.com/mysigmail/vue-email/tree/main/packages/components/column)
+- [MContainer](https://github.com/mysigmail/vue-email/tree/main/packages/components/container)
+- [MDivider](https://github.com/mysigmail/vue-email/tree/main/packages/components/hr)
+- [MHead](https://github.com/mysigmail/vue-email/tree/main/packages/components/head)
+- [MHeading](https://github.com/mysigmail/vue-email/tree/main/packages/components/heading)
+- [MHtml](https://github.com/mysigmail/vue-email/tree/main/packages/components/html)
+- [MImage](https://github.com/mysigmail/vue-email/tree/main/packages/components/img)
+- [MLink](https://github.com/mysigmail/vue-email/tree/main/packages/components/link)
+- [MParagraph](https://github.com/mysigmail/vue-email/tree/main/packages/components/text)
+- [MPreview](https://github.com/mysigmail/vue-email/tree/main/packages/components/preview)
+- [MSection](https://github.com/mysigmail/vue-email/tree/main/packages/components/section)
 
 ## Client
 
@@ -37,8 +80,8 @@ This repository contains a client application that serves as a local testing env
 
 ## TODO
 
-- [ ] - Client
-
+- [ ] Client
+- [ ] Test sending an email using Nodemailer.
 ## Other
 
 Inspired by [react-email](https://github.com/resendlabs/react-email)
