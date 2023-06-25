@@ -59,19 +59,19 @@ const html = render(YourEmail)
 
 This is a collection of pre-built components that can be used to create impressive emails without the hassle of manually creating tables and managing outdated code.
 
-- [MBody](https://github.com/mysigmail/vue-email/tree/main/packages/components/body)
-- [MButton](https://github.com/mysigmail/vue-email/tree/main/packages/components/button)
-- [MColumn](https://github.com/mysigmail/vue-email/tree/main/packages/components/column)
-- [MContainer](https://github.com/mysigmail/vue-email/tree/main/packages/components/container)
-- [MHead](https://github.com/mysigmail/vue-email/tree/main/packages/components/head)
-- [MHeading](https://github.com/mysigmail/vue-email/tree/main/packages/components/heading)
-- [MHr](https://github.com/mysigmail/vue-email/tree/main/packages/components/hr)
-- [MHtml](https://github.com/mysigmail/vue-email/tree/main/packages/components/html)
-- [MImage](https://github.com/mysigmail/vue-email/tree/main/packages/components/img)
-- [MLink](https://github.com/mysigmail/vue-email/tree/main/packages/components/link)
-- [MPreview](https://github.com/mysigmail/vue-email/tree/main/packages/components/preview)
-- [MSection](https://github.com/mysigmail/vue-email/tree/main/packages/components/section)
-- [MText](https://github.com/mysigmail/vue-email/tree/main/packages/components/text)
+- [MBody](https://github.com/mysigmail/vue-email/tree/main/packages/components/src/body)
+- [MButton](https://github.com/mysigmail/vue-email/tree/main/packages/components/src/button)
+- [MColumn](https://github.com/mysigmail/vue-email/tree/main/packages/components/src/column)
+- [MContainer](https://github.com/mysigmail/vue-email/tree/main/packages/components/src/container)
+- [MHead](https://github.com/mysigmail/vue-email/tree/main/packages/components/src/head)
+- [MHeading](https://github.com/mysigmail/vue-email/tree/main/packages/components/src/heading)
+- [MHr](https://github.com/mysigmail/vue-email/tree/main/packages/components/src/hr)
+- [MHtml](https://github.com/mysigmail/vue-email/tree/main/packages/components/src/html)
+- [MImage](https://github.com/mysigmail/vue-email/tree/main/packages/components/src/img)
+- [MLink](https://github.com/mysigmail/vue-email/tree/main/packages/components/src/link)
+- [MPreview](https://github.com/mysigmail/vue-email/tree/main/packages/components/src/preview)
+- [MSection](https://github.com/mysigmail/vue-email/tree/main/packages/components/src/section)
+- [MText](https://github.com/mysigmail/vue-email/tree/main/packages/components/src/text)
 
 ## Client
 

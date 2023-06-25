@@ -4,7 +4,7 @@
   "description": "All vue email components",
   "type": "module",
   "main": "./dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist/**"
   ],
@@ -12,7 +12,7 @@
     "build": "npm run clear && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "clear": "rimraf ./dist",
+    "clear": "rimraf dist",
     "release": "bumpp -c 'build: release v' -t --no-push",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },

@@ -5,14 +5,13 @@ import dts from 'vite-plugin-dts'
 export default defineConfig({
   build: {
     lib: {
-      entry: './index.ts',
+      entry: './src/index.ts',
       name: 'index',
       fileName: 'index',
     },
     rollupOptions: {
       external: ['vue', 'html-to-text', 'pretty'],
       output: {
-        dir: './dist',
         globals: {
           vue: 'Vue',
         },
