@@ -23,7 +23,7 @@ const mso2 = computed(() => {
 <template>
   <a
     target="_blank"
-    style="display: inline-block; text-decoration: none; min-width: 100%"
+    style="display: inline-block; text-decoration: none; max-width: 100%"
   >
     <span v-html="mso1" />
     <span
