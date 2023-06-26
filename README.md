@@ -91,6 +91,11 @@ pnpm install
 pnpm run dev
 ```
 
+### Development
+
+To start developing your next email template, create a <code>.vue</code> file in the <code>packages/client/emails</code> folder.
+
+
 ## TODO
 
 - [ ] Test sending an email using Nodemailer.
