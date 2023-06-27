@@ -1,22 +1,23 @@
 <script setup lang="ts">
 import { convert } from 'html-to-text'
 import { renderInIframe, renderToString } from '@/utils'
+import { useState } from '@/composables'
 
 const route = useRoute()
 const refMount = ref<HTMLDivElement>()
 
 const slug = route.params.slug
 const view = computed(() => route.query.view)
-const source = ref('')
-const text = ref('')
+
+const { html, text } = useState()
 
 onMounted(async () => {
   const Email = defineAsyncComponent(() => import(`../../emails/${slug}.vue`))
 
   renderInIframe(refMount.value!, Email)
 
-  source.value = await renderToString(Email)
-  text.value = convert(source.value)
+  html.value = await renderToString(Email)
+  text.value = convert(html.value)
 })
 </script>
 
@@ -31,7 +32,7 @@ onMounted(async () => {
       <ElTabs>
         <ElTabPane label="HTML" class="h-[calc(100vh_-_10rem)] overflow-auto rounded">
           <ClientOnly>
-            <CodePreview :code="source" />
+            <CodePreview :code="html" />
           </ClientOnly>
         </ElTabPane>
         <ElTabPane label="Text" class="h-[calc(100vh_-_10rem)] overflow-auto rounded">

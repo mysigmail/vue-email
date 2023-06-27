@@ -85,6 +85,17 @@ git clone https://github.com/mysigmail/vue-email.git
 pnpm install
 ```
 
+### Environment
+
+Set up variables for test email sending.
+
+```bash
+NUXT_EMAIL_HOST= # The hostname of the SMTP server used to send emails.
+NUXT_EMAIL_PORT= # The port of the SMTP server.
+NUXT_EMAIL_USER= # The username used to authenticate on the SMTP server.
+NUXT_EMAIL_PASSWORD= # The password used to authenticate on the SMTP server.
+```
+
 ### Run
 
 ```bash
@@ -98,7 +109,7 @@ To start developing your next email template, create a <code>.vue</code> file in
 
 ## TODO
 
-- [ ] Test sending an email using Nodemailer.
+- [x] Test sending an email using Nodemailer.
 - [ ] Add the script to the automatic setup for the client.
 ## Other
 
