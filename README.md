@@ -2,7 +2,7 @@
 
 <h1 align="center">Vue Email Components</h1>
 
-<p align="center">A collection of high-quality, unstyled components for creating beautiful emails using Vue.</p>
+<p align="center">A collection of high-quality, unstyled components<br>for creating beautiful emails using Vue.</p>
 
 <p align="center">
   <a href="https://vue-email.mysigmail.com">Demo</a>
