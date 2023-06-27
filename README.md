@@ -1,6 +1,30 @@
-<h1 align="center">MySigMail Vue Email Components</h1>
+<h1 align="center">Vue Email Components</h1>
 <p align="center">A collection of high-quality, unstyled components for creating beautiful emails using Vue.</p>
 <img src="./hero.jpg">
+
+<p align="center">
+  <strong>SPONSORS</strong>
+</p>
+
+<p align="center">
+  <a href="https://m.do.co/c/f2bb3bfab2e6">
+    <img src='.github/assets/DO.svg'>
+  </a>
+  &nbsp;
+  <a href="https://mysigmail.com/?ref=github/massCodeIO">
+    <img src='.github/assets/MySigMail.svg'>
+  </a>
+</p>
+
+## Support
+
+If you find this project useful, you can support development via the following methods:
+
+<div align="center">
+
+[![Donate via PayPal](https://img.shields.io/badge/donate-PayPal-blue.svg?style=popout&logo=paypal)](https://paypal.me/antongithub)
+
+</div>
 
 ## Introduction
 
