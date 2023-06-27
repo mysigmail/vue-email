@@ -75,7 +75,7 @@ This is a collection of pre-built components that can be used to create impressi
 
 ## Client
 
-This repository contains a client application that serves as a local testing environment. Using this client, you can create email templates by selecting from pre-built components, apply styles to these components, preview the final render, and obtain the corresponding HTML code.
+This repository contains a client application that serves as a local testing environment. Using this client, you can create email templates by selecting from pre-built components, apply styles to these components, preview the final render, and obtain the corresponding HTML code. You can also perform a test send email.
 
 ### Install
 
