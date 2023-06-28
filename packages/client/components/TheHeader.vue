@@ -80,34 +80,36 @@ watch(route, (v) => {
         </ElRadioButton>
       </ElRadioGroup>
     </div>
-    <div>
-      <ElButton class="relative top-[1px]" @click="showDialog = true">
-        Send
-      </ElButton>
-      <ClientOnly>
-        <ElDialog v-model="showDialog" width="500px" :append-to-body="true">
-          <ElForm ref="formRef" :model="form" :rules="formRules" label-width="80px" label-position="left">
-            <ElFormItem label="To" prop="to">
-              <ElInput v-model="form.to" placeholder="example@gmail.com" />
-            </ElFormItem>
-            <ElFormItem label="Subject">
-              <ElInput v-model="form.subject" placeholder="Testing Vue Email" />
-            </ElFormItem>
-          </ElForm>
-          <ElAlert v-if="sendError" type="error" :closable="false">
-            Error sending, try again.
-          </ElAlert>
-          <template #footer>
-            <ElButton @click="showDialog = false">
-              Cancel
-            </ElButton>
-            <ElButton type="primary" :loading="loading" @click="submitForm">
-              Send
-            </ElButton>
-          </template>
-        </ElDialog>
-      </ClientOnly>
-    </div>
+    <DevOnly>
+      <div>
+        <ElButton class="relative top-[1px]" @click="showDialog = true">
+          Send
+        </ElButton>
+        <ClientOnly>
+          <ElDialog v-model="showDialog" width="500px" :append-to-body="true">
+            <ElForm ref="formRef" :model="form" :rules="formRules" label-width="80px" label-position="left">
+              <ElFormItem label="To" prop="to">
+                <ElInput v-model="form.to" placeholder="example@gmail.com" />
+              </ElFormItem>
+              <ElFormItem label="Subject">
+                <ElInput v-model="form.subject" placeholder="Testing Vue Email" />
+              </ElFormItem>
+            </ElForm>
+            <ElAlert v-if="sendError" type="error" :closable="false">
+              Error sending, try again.
+            </ElAlert>
+            <template #footer>
+              <ElButton @click="showDialog = false">
+                Cancel
+              </ElButton>
+              <ElButton type="primary" :loading="loading" @click="submitForm">
+                Send
+              </ElButton>
+            </template>
+          </ElDialog>
+        </ClientOnly>
+      </div>
+    </DevOnly>
   </div>
 </template>
 
