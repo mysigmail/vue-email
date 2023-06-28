@@ -9,14 +9,16 @@ const refMount = ref<HTMLDivElement>()
 const slug = route.params.slug
 const view = computed(() => route.query.view)
 
-const { html, text } = useState()
+const { html, text, vue } = useState()
 
 onMounted(async () => {
   const Email = defineAsyncComponent(() => import(`../../emails/${slug}.vue`))
+  const source = await import(`../../emails/${slug}.vue?raw`)
 
   renderInIframe(refMount.value!, Email)
 
   html.value = await renderToString(Email)
+  vue.value = source.default
   text.value = convert(html.value)
 })
 </script>
@@ -30,6 +32,11 @@ onMounted(async () => {
   <div v-show="view === 'source'" class="source flex justify-center">
     <div class="source__inner mt-4 w-[800px]">
       <ElTabs>
+        <ElTabPane label="Vue" class="h-[calc(100vh_-_10rem)] overflow-auto rounded">
+          <ClientOnly>
+            <CodePreview :code="vue" />
+          </ClientOnly>
+        </ElTabPane>
         <ElTabPane label="HTML" class="h-[calc(100vh_-_10rem)] overflow-auto rounded">
           <ClientOnly>
             <CodePreview :code="html" />
