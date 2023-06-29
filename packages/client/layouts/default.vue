@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import LogoSvg from '@/assets/svg/logo-black.svg'
+
 const files = import.meta.glob('../emails/*.vue')
 const re = /\/([^/]+)\.vue$/
 
@@ -40,7 +42,7 @@ const nav = Object.entries(files).map(([k, _]) => {
       </div>
       <div class="sidebar__footer flex items-center h-12">
         <a href="https://mysigmail.com?ref=vue-email" target="_blank">
-          <img src="/logo-black.svg" alt="">
+          <LogoSvg class="w-[60px]" :font-controlled="false" />
         </a>
       </div>
     </nav>
