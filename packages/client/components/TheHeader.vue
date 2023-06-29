@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { FormInstance } from 'element-plus'
 import { useState } from '@/composables'
+import GitHubSvg from '@/assets/svg/github.svg'
 
 const router = useRouter()
 const route = useRoute()
@@ -69,7 +70,7 @@ watch(route, (v) => {
 </script>
 
 <template>
-  <div class="flex items-center gap-4">
+  <div class="flex items-center gap-4 w-full justify-center">
     <div>
       <ElRadioGroup v-model="view">
         <ElRadioButton label="desktop">
@@ -110,6 +111,11 @@ watch(route, (v) => {
         </ClientOnly>
       </div>
     </DevOnly>
+    <div class="absolute flex gap-2 right-0 m-3">
+      <a href="https://github.com/mysigmail/vue-email" target="_blank">
+        <GitHubSvg class="w-[24px]" :font-controlled="false" />
+      </a>
+    </div>
   </div>
 </template>
 

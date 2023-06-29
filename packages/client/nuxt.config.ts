@@ -9,6 +9,7 @@ export default defineNuxtConfig({
   },
   modules: [
     '@element-plus/nuxt',
+    'nuxt-svgo',
   ],
   vite: {
     define: {

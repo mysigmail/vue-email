@@ -13,7 +13,7 @@ const nav = Object.entries(files).map(([k, _]) => {
 <template>
   <div class="default-layout pb-12 h-screen text-slate-900 bg-[#f6f9fc]">
     <nav
-      class="pl-60 h-12 sticky left-0 top-0 z-50 w-full bg-slate-100 flex gap-10 items-center justify-center"
+      class="pl-60 h-12 sticky left-0 top-0 z-50 _w-full bg-slate-100 flex gap-10 items-center justify-center"
     >
       <TheHeader />
     </nav>
