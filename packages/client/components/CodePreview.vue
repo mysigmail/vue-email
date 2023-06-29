@@ -31,6 +31,7 @@ const source = computed(() => highlighter.codeToHtml(pretty(props.code), {
     overflow: scroll;
     padding: 8px;
     font-size: 14px;
+    height: calc(100vh - 13rem);
   }
 }
 </style>

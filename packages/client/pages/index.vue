@@ -4,7 +4,7 @@
 
 <template>
   <div class="index flex items-center justify-center leading-7 text-slate-600">
-    <div class="w-[500px] text-center _border p-8 rounded-lg _bg-white mt-24">
+    <div class="w-[500px] text-center p-8 rounded-lg mt-24">
       <p class="font-bold">
         Welcome to the Vue Email preview!
       </p>
