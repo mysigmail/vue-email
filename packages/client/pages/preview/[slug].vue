@@ -46,8 +46,8 @@ onMounted(async () => {
     </div>
   </div>
   <div v-show="view === 'source'" class="source flex justify-center relative top-[8px]">
-    <div class="source__inner w-[752px] rounded px-8 pb-8 pt-2 bg-white">
-      <div class="actions absolute right-[50px] z-10">
+    <div class="source__inner w-[752px] relative rounded px-8 pb-8 pt-2 bg-white">
+      <div class="actions absolute right-8 z-10">
         <ElButton _size="small" link _type="info" @click="onCopy">
           <CopySvg width="18" :font-controlled="false" />
         </ElButton>
