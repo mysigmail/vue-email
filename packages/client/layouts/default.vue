@@ -14,6 +14,8 @@ const nav = Object.entries(files).map(([k, _]) => {
     name,
   }
 })
+
+const year = new Date().getFullYear()
 </script>
 
 <template>
@@ -44,6 +46,7 @@ const nav = Object.entries(files).map(([k, _]) => {
         <a href="https://mysigmail.com?ref=vue-email" target="_blank">
           <LogoSvg class="w-[60px]" :font-controlled="false" />
         </a>
+        <span class="text-xs _text-slate-400">©{{ year }} • Anton Reshetov</span>
       </div>
     </nav>
     <main class="container pl-60 m-auto h-[calc(100vh_-_5rem)]">
