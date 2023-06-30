@@ -29,18 +29,18 @@ const nav = Object.entries(files).map(([k, _]) => {
         <div class="logo flex h-20 items-center font-bold">
           Vue Email Client
         </div>
-      </div>
-      <div class="sidebar__body grow">
         <p class="text-xs text-slate-400">
           List of emails
         </p>
-        <nav class="flex flex-col mt-3">
+      </div>
+      <div class="sidebar__body grow  overflow-auto">
+        <nav class="flex flex-col mt-3  ">
           <NuxtLink v-for="i in nav" :key="i.name" :to="`/preview/${i.name}?view=desktop`" class="py-2 text-sm">
             {{ i.name }}
           </NuxtLink>
         </nav>
       </div>
-      <div class="sidebar__footer flex items-center h-12">
+      <div class="sidebar__footer flex flex-col shrink-0 gap-1 h-12 my-2">
         <a href="https://mysigmail.com?ref=vue-email" target="_blank">
           <LogoSvg class="w-[60px]" :font-controlled="false" />
         </a>
