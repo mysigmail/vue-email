@@ -1,7 +1,7 @@
 {
   "name": "@mysigmail/vue-email-components",
   "type": "module",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "All vue email components",
   "author": {
     "name": "Anton Reshetov",
