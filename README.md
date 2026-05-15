@@ -81,7 +81,11 @@ import { MButton } from '@mysigmail/vue-email-components'
 import { render } from '@mysigmail/vue-email-components'
 import YourEmail from './YourEmail.vue'
 
-const html = render(YourEmail)
+const html = await render(YourEmail, {
+  name: 'Anton',
+  ctaUrl: 'https://mysigmail.com/pricing',
+  year: 2026,
+})
 </script>
 ```
 
