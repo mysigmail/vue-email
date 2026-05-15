@@ -10,7 +10,7 @@ export default defineConfig({
       fileName: 'index',
     },
     rollupOptions: {
-      external: ['vue', 'html-to-text', 'pretty'],
+      external: ['vue', '@vue/server-renderer', 'html-to-text', 'pretty'],
       output: {
         globals: {
           vue: 'Vue',

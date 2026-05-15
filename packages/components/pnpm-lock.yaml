@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@vue/server-renderer':
+    specifier: ^3.3.4
+    version: 3.3.4(vue@3.3.4)
   html-to-text:
     specifier: ^9.0.5
     version: 9.0.5
